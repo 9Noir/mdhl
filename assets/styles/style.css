@@ -1,13 +1,5 @@
-*{
-    border: 1px solid black;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-img{
-    width: 200px;
-    object-fit: contain;
-}
-a{
-    text-decoration: none;
-}
+/* @import url(style1.css); */
+@import url(style2.css);
+/* @import url(style3.css); */
+
+
