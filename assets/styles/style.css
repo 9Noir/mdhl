@@ -1,5 +1,145 @@
-@import url(style1.css);
-/* @import url(style2.css); */
-/* @import url(style3.css); */
+:root {
+    --pad: 20px;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+@keyframes carrusel {
+    0% {
+        background-image: url(../img/design1_image1.jpg);
+    }
+
+    33.33% {
+        background-image: url(../img/img1.jpg);
+    }
+
+    66.66% {
+        background-image: url(../img/img2.jpg);
+    }
+
+    100% {
+        background-image: url(../img/img3.jpg);
+    }
+}
+
+.logo-img {
+    max-width: 150px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #336699ff;
+}
+
+h1 {
+    text-align: center;
+    padding: var(--pad);
+}
+
+h2 {
+    padding: var(--pad);
+    text-align: center;
+    background-color: #86bbd8ff;
+}
+
+span:not(article>span, h3 span) {
+    font-weight: bolder;
+}
+
+.letter-list {
+    list-style-type: lower-alpha;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2f4858ff;
+}
+
+nav a {
+    height: 60px;
+    flex-basis: 220px;
+    padding: var(--pad);
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: rgba(240, 248, 255, 0.397);
+    transition: 0.25s;
+}
+
+.active {
+    background-color: #86bbd8ff;
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: carrusel 20s infinite;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    margin: 50px 0 50px 0;
+    max-width: 800px;
+    flex-direction: column;
+    background-color: rgba(47, 72, 88, 0.5);
+}
+
+article,
+li:not(li ol li), section>p {
+    padding: var(--pad);
+}
+
+table {
+    flex: 1;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+    padding: var(--pad);
+}
+
+th {
+    background-color: rgba(47, 72, 88, 0.5);
+}
+
+.stripe {
+    background-color: rgba(134, 187, 216, 0.5);
+}
+
+h3 span {
+    font-size: medium;
+    font-weight: normal;
+}
