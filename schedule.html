@@ -12,14 +12,19 @@
 <body>
     <header>
         <img class="logo-img" src="assets/img/logo.png" alt="Logo">
+        <label for="open-nav"><h3>≡</h3></label>
         <h1>Mighy Ducks Hockey League</h1>
+        <input type="radio" name="toggle-nav" id="close-nav">
+        <input type="radio" name="toggle-nav" id="open-nav">
         <nav>
+            <label for="close-nav" class="toggle-map">Close</label>
             <a href="index.html">Home</a>
-            <a href="about.html">About MDHL</a>
-            <a class="active" href="#">Game Information</a>
-            <a href="rules.html">Rules & Policies</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <a href="about.html">About</a>
+            <a class="active" href="#">Schedule</a>
+            <a href="rules.html">Rules</a>
+            <a href="signup.html">Signup</a>
+            <a href="schedule.html">Contact</a>
+          </nav>
     </header>
     <main>
         <section>
@@ -38,58 +43,165 @@
                     <tr>
                         <td rowspan="2">9/01</td>
                         <td>U1 and U4</td>
-                        <td>AJ Katzenmaier</td>
+                        <td><label for="ajk-map" class="toggle-map">AJ Katzenmaier</label></td>
                         <td>9:30 a.m.</td>
                     </tr>
                     <tr>
                         <td>U3 and U2</td>
-                        <td>Greenbay</td>
+                        <td><label for="green-map" class="toggle-map">Greenbay</label></td>
                         <td>1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="map-td">
+                            <input type="radio" name="map" id="close">
+                            <input name="map" id="ajk-map" type="radio">
+                            <div class="map-container">
+                                <label for="close" class="toggle-map">Close</label>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4171.681582763314!2d-87.86598453550583!3d42.32494534926844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1sen!2sar!4v1675718347405!5m2!1sen!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <input name="map" id="green-map" type="radio">
+                            <div class="map-container">
+                                <label for="close" class="toggle-map">Close</label>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729915.9989449224!2d-88.46576112599777!3d44.38731041329474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802fa54437d3b65%3A0xf63728c8a91e81ef!2sGreen%20Bay%20Gamblers%20Hockey!5e0!3m2!1sen!2sar!4v1675732448502!5m2!1sen!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="stripe" rowspan="2">9/08</td>
                         <td class="stripe">U5 and U6</td>
-                        <td class="stripe">Howard A Yeager</td>
+                        <td class="stripe"><label for="hy-map" class="toggle-map">Howard A Yeager</label></td>
                         <td class="stripe">9:30 a.m.</td>
                     </tr>
                     <tr>
                         <td class="stripe">U6 and U1</td>
-                        <td class="stripe">Marjorie P Hart</td>
+                        <td class="stripe"><label for="mph-map" class="toggle-map">Marjorie P Hart</label></td>
                         <td class="stripe">1:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="map-td stripe">
+                            <input type="radio" name="map" id="close">
+                            <input name="map" id="hy-map" type="radio">
+                            <div class="map-container">
+                                <label for="close" class="toggle-map">Close</label>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.270062631391!2d-87.85606978459553!3d42.31543827918981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1sen!2sar!4v1675732592536!5m2!1sen!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <input name="map" id="mph-map" type="radio">
+                            <div class="map-container">
+                                <label for="close" class="toggle-map">Close</label>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378760.9976748329!2d-88.02601658867269!3d42.12737835373586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fecd0628e1bb5%3A0x9a4d5f9aafd42e02!2sMarjorie%20P%20Hart%20School!5e0!3m2!1sen!2sar!4v1675733288134!5m2!1sen!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td rowspan="2">9/15</td>
                         <td>U2 and U4</td>
-                        <td>North</td>
+                        <td><label for="north-map" class="toggle-map">North</label></td>
                         <td>9:30 a.m.</td>
                     </tr>
                     <tr>
                         <td>U3 and U5</td>
-                        <td>AJ Katzenmaier</td>
+                        <td><label for="ajk-map2" class="toggle-map">AJ Katzenmaier</label></td>
                         <td>1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="map-td">
+                            <input type="radio" name="map" id="close">
+                            <input name="map" id="north-map" type="radio">
+                            <div class="map-container">
+                                <label for="close" class="toggle-map">Close</label>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378765.07302970305!2d-88.02601837722864!3d42.12669672636716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405d0af78fccecef%3A0x7b656b47b3ae91a6!2sNorthwest%20Hockey%20League.!5e0!3m2!1sen!2sar!4v1675733543830!5m2!1sen!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <input name="map" id="ajk-map2" type="radio">
+                            <div class="map-container">
+                                <label for="close" class="toggle-map">Close</label>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4171.681582763314!2d-87.86598453550583!3d42.32494534926844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1sen!2sar!4v1675718347405!5m2!1sen!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="stripe" rowspan="2">9/22</td>
                         <td class="stripe">U1 and U3</td>
-                        <td class="stripe">South</td>
+                        <td class="stripe"><label for="south-map" class="toggle-map">South</label></td>
                         <td class="stripe">9:30 a.m.</td>
                     </tr>
                     <tr>
                         <td class="stripe">U2 and U6</td>
-                        <td class="stripe">Howard A Yeager</td>
+                        <td class="stripe"><label for="hy-map2" class="toggle-map">Howard A Yeager</label></td>
                         <td class="stripe">1:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="map-td stripe">
+                            <input type="radio" name="map" id="close">
+                            <input name="map" id="south-map" type="radio">
+                            <div class="map-container">
+                                <label for="close" class="toggle-map">Close</label>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47621.45873467114!2d-87.64939814179685!3d41.756301499999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e28f5901da791%3A0xf9e45684281c5909!2sSouth%20Shore!5e0!3m2!1sen!2sar!4v1675734358509!5m2!1sen!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <input name="map" id="hy-map2" type="radio">
+                            <div class="map-container">
+                                <label for="close" class="toggle-map">Close</label>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.270062631391!2d-87.85606978459553!3d42.31543827918981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1sen!2sar!4v1675732592536!5m2!1sen!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>9/29</td>
                         <td>U4 and U5</td>
-                        <td>Greenbay</td>
+                        <td><label for="green-map2" class="toggle-map">Greenbay</label></td>
                         <td>9:30 a.m</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="map-td">
+                            <input type="radio" name="map" id="close">
+                            <input name="map" id="green-map2" type="radio">
+                            <div class="map-container">
+                                <label for="close" class="toggle-map">Close</label>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729915.9989449224!2d-88.46576112599777!3d44.38731041329474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802fa54437d3b65%3A0xf63728c8a91e81ef!2sGreen%20Bay%20Gamblers%20Hockey!5e0!3m2!1sen!2sar!4v1675732448502!5m2!1sen!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
             <article>
                 <h3>Facility Type:<span> Outdoor</span></h3>
-                <h3>Additional Information:<span> If deemed necessary by MDHL games may be shortened or cancelled due to extreme weather conditions.</span></h3>
+                <h3>Additional Information:<span> If deemed necessary by MDHL games may be shortened or cancelled due to
+                        extreme weather conditions.</span></h3>
             </article>
             <article>
                 <h3>Please direct all questions to:<span> Michael Randall, League Coordinator</span></h3>
