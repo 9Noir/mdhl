@@ -271,9 +271,9 @@ header label {
         width: 80px;
     }
 
-    label h3 {
+    header label {
         margin-right: calc(var(--pad));
-        font-size: 50px;
+        font-size: 60px;
     }
 
     h1 {

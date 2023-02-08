@@ -12,9 +12,7 @@
 <body>
     <header>
         <img class="logo-img" src="assets/img/logo.png" alt="Logo">
-        <label for="open-nav">
-            <h3>≡</h3>
-        </label>
+        <label for="open-nav">≡</label>
         <h1>Mighy Ducks Hockey League</h1>
         <input type="radio" name="toggle-nav" id="close">
         <input type="radio" name="toggle-nav" id="open-nav">
@@ -67,7 +65,7 @@
                             <input type="date" id="birth_date" name="birth_date">
                         </div>
                         <div class="form-row">
-                            <label for="gender">Gender:</label>
+                            <label>Gender:</label>
                             <div class="form-row">
                                 <input type="radio" id="female" name="gender" value="female">
                                 <label class="radio" for="female">Female</label>
@@ -76,8 +74,9 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="form-row">
-                        <label for="grade">Grade:</label>
+                        <label>Grade:</label>
                         <div class="form-row">
                             <input type="radio" id="pre-school" name="grade" value="Pre-School">
                             <label for="pre-school" class="radio">Pre-School</label>
@@ -137,13 +136,7 @@
                             <option value="Extra-Large">Extra-Large</option>
                         </select>
                     </div>
-
-
-
-
-
                 </div>
-
 
                 <article>
                     <h4>Permission to Play</h4>
@@ -165,7 +158,7 @@
                     </p>
                     <input type="checkbox" name="terms_agreement" value="yes" id="terms_agreement" required><label
                         for="terms_agreement"> I agree to the terms and conditions outlined above</label><br>
-                    <label class="w50">Date: <input type="date" name="agreement_date" required></label><br>
+                    <label class="w50">Date: <input type="date" id="signDate" name="agreement_date" required></label><br>
                     <div class="center">
                         <input class="btn" type="submit" value="Confirm">
                     </div>
@@ -173,6 +166,9 @@
             </form>
         </section>
     </main>
+    <script>
+        document.getElementById('signDate').valueAsDate = new Date();
+    </script>
 </body>
 
 </html>
