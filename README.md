@@ -1,11 +1,11 @@
 # Mighty Ducks Hockey League Website
 Este sitio web fue creado como parte del trabajo práctico del curso Bootcamp Front de Mindhub. El objetivo del proyecto era diseñar y desarrollar una página web responsive para la Mighty Ducks Hockey League. La página web debía contar con las siguientes secciones:
 
-## Home
-Acerca de nosotros (About)
-Horario de partidos (Schedule)
-Formulario de registro
-Página de contacto
+- Home
+- Acerca de nosotros (About)
+- Horario de partidos (Schedule)
+- Formulario de registro
+- Página de contacto
 
 ## Home
 En la página de inicio se muestran los próximos eventos programados para la liga. Además, se incluye información general sobre la liga y enlaces a otras secciones del sitio web.
